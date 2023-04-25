@@ -3,6 +3,7 @@ import apiUrl from '../api'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import logo from '../public/img/Logo.svg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +19,7 @@ function App() {
             </button>
             <a href="#" class="flex items-center">
               <p className='text-xl md:hidden'>雪</p>
-              <img className='hidden w-28 md:block' src="/public/img/Logo.svg" alt=""/>
+              <img className='hidden w-28 md:block' src={logo} alt=""/>
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
           </div>
