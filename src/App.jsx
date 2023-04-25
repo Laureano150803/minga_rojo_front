@@ -3,15 +3,6 @@ import apiUrl from '../api'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import fb from '/src/assets/img/Facebook.png'
-import footer from '/src/assets/img/footer.png'
-import logo from '/src/assets/img/logo.svg'
-import mona from '/src/assets/img/monita.svg'
-import one from '/src/assets/img/one.png'
-import Tw from '/src/assets/img/Twitter.png'
-import uni from '/src/assets/img/Union.png'
-import Vime from '/src/assets/img/Vimeo.png'
-import yout from '/src/assets/img/Youtube.png'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +10,7 @@ function App() {
   return (
     <>
     <div className='overflow-x-hidden'>
-      <div className=' h-screen w-screen bg-center bg-cover bg-no-repeat  bg-[url(/src/assets/img/back.svg)] text-white   md:h-[50vh]'>
+      <div className=' h-screen w-screen bg-center bg-cover bg-no-repeat  bg-[url(/public/img/back.svg)] text-white   md:h-[50vh]'>
         <nav>
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
             <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center ml-3 text-sm  rounded-lg hover:bg-gray-100  focus:ring-2  dark:text-[#F97316] dark:hover:bg-white" aria-controls="navbar-hamburger" aria-expanded="false">
@@ -27,7 +18,7 @@ function App() {
             </button>
             <a href="#" class="flex items-center">
               <p className='text-xl md:hidden'>雪</p>
-              <img className='hidden w-28 md:block' src={logo} alt=""/>
+              <img className='hidden w-28 md:block' src="/public/img/Logo.svg" alt=""/>
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
           </div>
@@ -46,8 +37,8 @@ function App() {
       <div className='hidden md:block w-screen h-60 mt-7'>
         <div className='flex justify-center'>
           <div className='bg-gradient-to-b from-[#FF5722]  to-[#F97316] h-[10rem] rounded-sm w-[90%]  flex justify-evenly' >
-              <img className='relative bottom-5' src={mona}/> 
-              <img className='relative bottom-5' src={one}/>
+              <img className='relative bottom-5' src="/public/img/monita.svg"/> 
+              <img className='relative bottom-5' src="/public/img/one.png"/>
             <div className='text-white text-xs flex flex-col justify-center flex-wrap'>
               <h5 className='text-base font-bold'>Shonen</h5>
               <p className='w-[18rem]'>Shonen Is the manga that is aimed at adolescent boys. They are series with large amounts of action, in which humorous situations often occur. The camaraderie between members of a collective or a combat team stands out.</p>
@@ -55,7 +46,7 @@ function App() {
           </div>
         </div>
       </div>
-      <footer className='hidden md:block w-screen  mb-10'>
+      {/* <footer className='hidden md:block w-screen  mb-10'>
         <div className='mb-14'>
           <img className='w-screen h-[12rem]'  src={footer}/> 
         </div> 
@@ -82,7 +73,7 @@ function App() {
             </div>
           </div>
         </div>
-    </footer>
+    </footer> */}
     </div> 
     </>
   )
