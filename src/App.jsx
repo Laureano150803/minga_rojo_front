@@ -4,6 +4,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import logo from '../public/img/Logo.svg'
+import mona from '../public/img/monita.svg'
+import one from '../public/img/one.png'
+import footer from '../public/img/footer.png'
+import fb from '../public/img/Facebook.png'
+import Tw from '../public/img/Twitter.png'
+import Vime from '../public/img/Vimeo.png'
+import yout from '../public/img/Youtube.png'
+import uni from '../public/img/Union.png'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,8 +46,8 @@ function App() {
       <div className='hidden md:block w-screen h-60 mt-7'>
         <div className='flex justify-center'>
           <div className='bg-gradient-to-b from-[#FF5722]  to-[#F97316] h-[10rem] rounded-sm w-[90%]  flex justify-evenly' >
-              <img className='relative bottom-5' src="/public/img/monita.svg"/> 
-              <img className='relative bottom-5' src="/public/img/one.png"/>
+              <img className='relative bottom-5' src={mona}/> 
+              <img className='relative bottom-5' src={one}/>
             <div className='text-white text-xs flex flex-col justify-center flex-wrap'>
               <h5 className='text-base font-bold'>Shonen</h5>
               <p className='w-[18rem]'>Shonen Is the manga that is aimed at adolescent boys. They are series with large amounts of action, in which humorous situations often occur. The camaraderie between members of a collective or a combat team stands out.</p>
@@ -47,7 +55,7 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <footer className='hidden md:block w-screen  mb-10'>
+       <footer className='hidden md:block w-screen  mb-10'>
         <div className='mb-14'>
           <img className='w-screen h-[12rem]'  src={footer}/> 
         </div> 
@@ -74,7 +82,7 @@ function App() {
             </div>
           </div>
         </div>
-    </footer> */}
+    </footer> 
     </div> 
     </>
   )
