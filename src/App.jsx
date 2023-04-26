@@ -4,8 +4,9 @@ import './App.css'
 
 //components
 
-import Index from './assets/pages' 
+ 
 import Main from './assets/layout/Main'
+
 //-----------------------------------------------
 
 
@@ -16,9 +17,7 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <>
-     <Main>
-     <Index/>
-     </Main>
+      <Main/> 
     </>
   )
 }
